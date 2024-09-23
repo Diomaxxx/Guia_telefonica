@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FPB - Futuristic Phone Book</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>
+      <span class="first-letter">F</span><span class="rest">uturistic</span>
+      <span class="first-letter">P</span><span class="rest">hone</span>
+      <span class="first-letter">B</span><span class="rest">ook</span>
+    </h1>
+    <div class="search-container">
+      <div class="search-box">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="search-input" placeholder="Buscar contactos...">
+      </div>
+      <div class="filter-options">
+        <button class="filter-option" data-filter="name">Nombre <span class="arrow">▼</span></button>
+        <button class="filter-option" data-filter="country">País <span class="arrow">▼</span></button>
+        <button class="filter-option" data-filter="city">Ciudad <span class="arrow">▼</span></button>
+        <button class="filter-option" data-filter="phone">Teléfono <span class="arrow">▼</span></button>
+      </div>
+    </div>
+    <ul id="results"></ul>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
